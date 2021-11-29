@@ -1,0 +1,1 @@
+Our proposed HWT generates realistic styled handwritten text images
