@@ -2,7 +2,7 @@ import torch
 
 ###############################################
 
-EXP_NAME = "IAM-DEF-NO-CC"; RESUME = True
+EXP_NAME = "IAM"; RESUME = True
 
 ###############################################
 
