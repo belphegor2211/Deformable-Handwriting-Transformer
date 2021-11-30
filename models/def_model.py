@@ -388,7 +388,7 @@ class TRGAN(nn.Module):
         self.KLD = 0 
 
 
-        with open('/mydrive/MyDrive/deformable/deformbale_hwt/english_words.txt', 'rb') as f:
+        with open('/mydrive/MyDrive/deformable/deformable_hwt/english_words.txt', 'rb') as f:
             self.lex = f.read().splitlines()
         lex=[]
         for word in self.lex:
@@ -401,7 +401,7 @@ class TRGAN(nn.Module):
         self.lex = lex
 
 
-        f = open('/mydrive/MyDrive/deformbale/deformable_hwt/mytext.txt', 'r') 
+        f = open('/mydrive/MyDrive/deformable/deformable_hwt/mytext.txt', 'r') 
 
         self.text = [j.encode() for j in sum([i.split(' ') for i in f.readlines()], [])][:NUM_EXAMPLES]
         self.eval_text_encode, self.eval_len_text = self.netconverter.encode(self.text)
